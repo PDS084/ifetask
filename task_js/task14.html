@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+</head>
+<body>
+
+<h3>污染城市列表</h3>
+<ul id="aqi-list">
+</ul>
+
+<script type="text/javascript">
+
+    var aqiData = [
+        ["北京", 90],
+        ["上海", 50],
+        ["福州", 10],
+        ["广州", 50],
+        ["成都", 90],
+        ["西安", 100]
+    ];
+
+    (function () {
+
+        /*
+         在注释下方编写代码
+         遍历读取aqiData中各个城市的数据
+         将空气质量指数大于60的城市显示到aqi-list的列表中
+         */
+
+        /* 先排序然后再输出 */
+        var len = aqiData.length;
+        var list = document.getElementById('aqi-list');
+        var no = 1;
+        var standard = 60;
+//        var temp;
+//        function sortBubble (arr ) {
+//            for(var j = 0; j < len-1; j++) {
+//                var isSwap = false;
+//                for(var i = 0 ; i< len-j-1; i++){
+//                    /*  冒泡排序 */
+//                    if(arr[i][1] > arr[i+1][1]){
+//                            temp = arr[i];
+//                            arr[i] = arr[i+1];
+//                            arr[i+1] = temp;
+//                            isSwap = true;//发生了交换
+//                    }
+//                }
+//                if(isSwap == false){//不发生交换，排序完成
+//                    return aqiData;
+//                }
+//            }
+//        }
+//        sortBubble(aqiData);
+
+        aqiData.sort(function(x,y) {
+            return x[1]-y[1]
+        });//因为是数值可以用这样
+
+        /* 输出排序结果*/
+        for ( var m = len-1; m >0; m--) {
+            if(aqiData[m][1] > standard) {
+                var node = document.createElement('li');
+                node.innerHTML = "第"+ (no++) + "名："+ aqiData[m][0] +","+ aqiData[m][1];
+                list.appendChild(node);
+            }else {
+                return false;
+            }
+        }
+    })();
+
+</script>
+</body>
+</html>

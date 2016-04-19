@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task 18</title>
+    <style>
+        button { margin:0 20px;}
+        .rec {display: inline-block;margin:50px 20px;padding:0px 10px; background-color: palevioletred;min-width:30px;height:50px;line-height: 50px; color:#fff;text-align: center}
+    </style>
+</head>
+<body>
+<div>
+    <input id="num" type="text"/>
+    <button id="in_left">左侧入</button>
+    <button id="in_right">右侧入</button>
+    <button id="out_left">左侧出</button>
+    <button id="out_right">右侧出</button>
+</div>
+<div id="wrapper">
+</div>
+<script>
+    window.onload = function() {
+        var num = document.getElementById('num'),
+            in_left = document.getElementById('in_left'),
+            in_right = document.getElementById('in_right'),
+            out_left = document.getElementById('out_left'),
+            out_right = document.getElementById('out_right'),
+            wrapper = document.getElementById('wrapper');
+
+        var data = [1,2,3];
+
+        function render() {
+            var content='',
+                len = data.length,
+                val;
+            console.log(len)
+            for(var i = 0; i< len; i++) {
+                val = data[i];
+                content += '<div class="rec">'+val+'</div>';
+                wrapper.innerHTML = content;
+            }
+            console.log(content);
+        }
+
+        in_left.addEventListener('click',function(){
+            // 拼接函数(索引位置, 要删除元素的数量, 元素)
+            data.splice(0, 0, num.value);
+            render();
+        });
+        in_right.addEventListener('click',function(){
+            data.splice(-1, 0, num.value);
+            render();
+        });
+        out_left.addEventListener('click',function(){
+            alert(data.splice(0,1));
+            render();
+        });
+        out_right.addEventListener('click',function(){
+            alert(data.splice(-1,1));
+            render();
+        });
+
+        function init() {
+            render();
+        }
+        init();
+
+
+    }
+</script>
+</body>
+</html>
