@@ -1,0 +1,13 @@
+
+button { margin:0 20px;}
+#wrapper { width:1500px;height:500px;position:relative;margin:0 auto;}
+.rec0,.rec1,.rec2 {display: inline-block;background-color: palevioletred;width:15px;color:#fff;text-align: center;position:absolute;bottom:0px;}
+
+$bg1 : plum;
+$bg2 : paleturquoise;
+$bg3 : papayawhip;
+
+.rec0 {background-color:$bg1};
+.rec1 {background-color:$bg2};
+.rec2 {background-color:$bg3};
+

@@ -1,0 +1,68 @@
+html,body,div,ul,li,p,img{
+  margin:0px;
+  padding:0px;
+}
+ul{
+  list-style: none;
+}
+body {
+  font-family: 'Microsoft Yahei';
+  font-size: 14px;
+  color:#333;
+  background-color:#fff;
+}
+a {
+  text-decoration: none;
+  outline:none;
+}
+.clearfix {
+  *zoom:1;
+}
+.clearfix:after {
+  content:'.';
+  height:0;
+  visibility: hidden;
+  clear:both;
+  display:block
+}
+.p-re {
+  position: relative
+}
+
+
+.wrapper {
+  padding:0px 10px 0px 10px;
+  margin:0px;
+}
+.outer {
+  margin-top:20px;
+  height:52px;
+  float:left;
+}
+.inner {
+  background-color:#eee;
+  border:1px solid #999;
+  margin:0px 10px;
+  height:50px;
+}
+
+
+@mixin defWidth($flag){
+  @if($flag == true) {
+    @for $i from 1 through 12 {//大于768px;
+      .col-md-#{$i} { width: $i / 12 * 100%;}
+    }
+  }@else {
+    @for $i from 1 through 12 {//小于768px;
+      .col-sm-#{$i} { width: $i / 12 * 100%;  }
+    }
+  }
+}
+
+@media screen and (max-width: 767px){//小于768px;
+  @include defWidth(false);
+}
+@media screen and (min-width: 768px){//大于768px;
+  @include defWidth(true);
+}
+

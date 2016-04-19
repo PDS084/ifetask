@@ -1,0 +1,28 @@
+button {
+  margin: 0 20px; }
+
+#wrapper {
+  width: 1500px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto; }
+
+.rec0, .rec1, .rec2 {
+  display: inline-block;
+  background-color: palevioletred;
+  width: 15px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0px; }
+
+.rec0 {
+  background-color: plum; }
+
+.rec1 {
+  background-color: paleturquoise; }
+
+.rec2 {
+  background-color: papayawhip; }
+
+/*# sourceMappingURL=task19.css.map */

@@ -1,0 +1,114 @@
+html,body,div,ul,li,p,img{margin:0px;padding:0px;}
+ul{list-style: none;}
+body {font-family: 'Microsoft Yahei';font-size: 14px;color:#333; background-color:#fff;}
+a { text-decoration: none;outline:none;}
+.clearfix {*zoom:1;}
+.clearfix:after {content:'.';height:0;visibility: hidden;clear:both;display:block}
+.p-re { position: relative}
+
+nav .logo .logo_img,.nav ul .login_icon,.part1 ul li .circle,.part1 ul li .flag,.part1 ul li .flower ,.part1 ul li .rec,.part2 .big_logo  { display:inline-block; *display:inline; *zoom:1;background: url("../images/ifetask7/icon.png") no-repeat;}
+nav .logo .logo_img {background-position: 0px 0px;}
+nav ul .login_icon {background-position:-44px -10px;}
+.part1 ul li .circle { background-position:0px -40px;}
+.part1 ul li .flag { background-position:0px -87px;}
+.part1 ul li .flower { background-position:-50px -40px;}
+.part1 ul li .rec { background-position:-50px -87px;}
+.part2 .big_logo {background-position:-114px -40px; }
+
+.wrapper { min-width:1280px; max-width: 1920px;margin:0 auto;}
+nav { height:58px;padding:0px 60px;}
+nav .logo { width:105px; line-height: 58px; float: left;}
+nav .logo .logo_img {width:31px;height:31px; vertical-align: middle;}
+nav .logo span { font-size: 21px; line-height: 58px; color:#393a3a;font-family:'SimHei'; }
+nav ul { float: right; width:575px;height:100%;}
+nav ul li { display:inline-block; *display:inline; *zoom:1; min-width:24px; line-height: 56px; text-align: center; padding:0px 20px; cursor: pointer}
+nav ul li.cur { border-bottom:2px solid #e74f4d; color: #e74f4d}
+nav ul li:hover { border-bottom:2px solid #e74f4d;}
+nav ul li.cur>a,nav ul li:hover> a { color: #e74f4d;}
+nav ul .login_icon { width:13px; height:29px; vertical-align: middle; margin-right:5px; }
+nav ul li a { color:#787b83; }
+
+.banner .banner1 { background: url("../images/ifetask7/banner1.jpg") no-repeat center center; height:229px; background-size:100% 100%;}
+.banner .banner2 { background: url("../images/ifetask7/banner2.jpg") no-repeat center center; height:264px; background-size:100% 100%;}
+.banner .banner3 { background: url("../images/ifetask7/banner3.jpg") no-repeat center center; height:197px; background-size:100% 100%;}
+.banner .banner_txt { padding-left: 9%; }
+.banner .bg_in { font-size: 60px; color:#fff;}
+.banner .sm_in { color:#fffdfd;padding-left:10px;line-height: 2 }
+.banner button { height:65px; width:330px; background-color: #e74f4d; text-align: center; font-size:30px; line-height: 65px; border: 0px; color: #fff;position: absolute; bottom:0px;left:9%; margin-left:10px; outline:none; cursor: pointer}
+
+
+.part1 { height:250px;}
+.part1 ul { height:100%;}
+.part1 ul li { width:25%; height:100%;float:left;}
+.part1 ul li p:first-of-type{ height:88px; width:100%;padding-top:45px; text-align: center;}
+.part1 ul li .circle, .part1 ul li .flag, .part1 ul li .flower, .part1 ul li .rec { width:42px; height:42px;}
+.part1 ul li p:last-of-type{text-align: center; color:#767777; border-right:2px solid #989899;height:50px;padding:0px 78px;}
+
+.part2 { height:272px; background-color: #ededed; padding-top:88px; text-align: center;}
+.part2 .big_logo { width:92px; height:92px; }
+.part2 .txt { font-size:54px; color:#a1a1a1; font-family: 'SimHei';padding-top:50px; }
+
+
+.activity { background-color:#f7f7f7;}
+.activity .sel_city { background:url("../images/ifetask7/select_img_06.jpg") no-repeat center center; background-size: 100% 100%; height:168px; padding:172px 126px 0px;}
+.activity .sel_city select{ width:236px;height:36px;font-size: 12px; color:#a8aaaa; outline:none;}
+.activity .sel_city select option{height:25px;}
+.act_list {height:608px;}
+.act_list ul { width:83%;margin:100px auto 0; text-align: center;}
+.act_list li {width:260px; display:inline-block; *display:inline; *zoom:1;vertical-align: top;}
+.act_list li .gal_img { width:209px; height:314px; padding:12px 8px 10px;border:1px solid #dadada;margin:0 auto;}
+.act_list li .local { font-size: 12px; olor:#313232; text-align: center;padding:15px 0px 12px;}
+.act_list li .name { font-size: 12px; color:#9f9f9f; text-align: center;}
+.act_list li.shanghai .local { font-size: 21px; color:#323333; text-align: center;padding:5px 0px 8px;}
+.act_list li.shanghai .local span { letter-spacing: 38px; }
+.act_list li.shanghai .name {padding-bottom:8px;}
+
+
+.activity .act_info_top { height:565px;width:100%;}
+.activity .act_info_top .wid_pic{ float:left; margin-right:430px;height:433px; padding-top:132px; color:#fff; background: url("../images/ifetask7/left_img.jpg") no-repeat left bottom;background-size:cover; text-align: center}
+.activity .act_info_top .intro { float:left;  width:290px; height:400px;padding:165px 70px 0px; background-color:#fff; margin-left:-430px;position:relative; text-align: center;}
+.activity .act_info_top .intro:before { content:'';width:0; height:0;position:absolute;border-top: 15px solid transparent; border-right: 30px solid #fff; border-left:15px solid transparent; border-bottom:15px solid transparent; left:-45px;top:50%; margin-top:-15px; font-size:0px;}
+.activity .act_info_top .intro .des { font-size: 12px; line-height: 2; color:#aaaaaa; padding-top:30px;}
+.activity .act_info_bottom .intro {height:521px;float:left;margin-right:430px;}
+.activity .act_info_bottom .sh_pic { width:430px; float:left;margin-left:-430px; background: url("../images/ifetask7/right_img.jpg") no-repeat left top;z-index:-1; background-color:palegoldenrod;background-size:cover;height:521px;}
+.activity .act_info_bottom .w50 { width:50%; float:left; background-color: #fff; height:349px; padding-top:172px; text-align: center}
+.activity .act_info_bottom .w50 .title { font-size: 21px; color: #fff; }
+.activity .act_info_bottom .title:hover>.line { animation-name: large; animation-duration: 1000ms;width:180px;}
+.activity .act_info_bottom .btn { display:block;width:167px; height:42px;line-height: 42px; margin:25px auto 0px; font-size: 21px; font-family: SimHei}
+.activity .act_info_bottom .btn.fff { color:#fff; border:1px solid #fff; }
+.activity .act_info_bottom .btn.e74 { color:#e74f4d; border:1px solid #e74f4d; }
+
+.line { width:30px;margin:0px auto;animation-name: shrink; animation-duration: 1000ms;}
+.line.fff {  border:1px solid #fff; }
+.line.e74 {  border:1px solid #e74f4d; }
+.apply { height:470px;padding:120px 140px 164px; text-align: center;}
+.apply .subhead { color: #aaa; font-size: 12px; line-height: 18px;padding-top:20px; padding-bottom:105px;}
+.apply .detail { width:1100px; margin:0 auto;height:1100px; padding-bottom: 165px;}
+.apply .ins { width:290px; padding:0px 70px; float:left;text-align:left;font-family:SimHei;background-color:paleturquoise;}
+.apply .ins .title { color:#231815; padding-bottom:30px;}
+.apply form { width:640px; float:left;background-color:plum }
+
+footer { }
+
+@keyframes large{
+    0% {width:30px;}
+    100%  {width:180px;}
+}
+@keyframes shrink{
+    0% {width:180px;}
+    100%  {width:30px;}
+}
+
+
+
+.f49 { font-size: 49px; }
+.f157 { font-size: 157px; }
+.f21 { font-size: 21px;}
+.f18 { font-size: 18px;}
+.lh2 { line-height: 2;}
+.top_30{ top:-30px;}
+.bge74 { background-color: #e74f4d !important;}
+.col_e74 { color:#e74f4d}
+.col_fff { color: #fff;}
+.mt25 {margin-top:25px;}
+.mt10 { margin-top:10px;}
